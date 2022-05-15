@@ -1,0 +1,181 @@
+#main{
+    background-image:url(../img/opportunity/bg_term.png);
+            background-attachment:fixed;
+            background-size: 100% 100%;
+            margin: 0 auto !important;
+            padding: 90px 110px !important;
+            z-index:2;
+            min-height: 595px;
+}
+.wapper{
+    width: 78%;
+    margin-right: auto;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    padding-top: 35px;
+}
+.wapper .page_title{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #E53328;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 470px;
+    padding-left: 5px;
+    margin-left: 55px;
+    text-align: center;
+    border-radius: 7px 7px 7px 7px;   
+}
+.content-body{
+position: relative;
+margin-top: 10px;
+display: flex;
+}
+.order-toolbar .category-list-menu{
+    margin-left: 55px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px 10px 10px 10px;
+}
+.category-list-menu li a.active{
+    background-color: #f9ad81;
+}
+.order-toolbar ul li a{
+    padding: 9px;
+    display: block;
+    color: #984d17;
+}
+.order-toolbar ul li a:hover{
+    color: #f9ad81;
+}
+.content-body-main{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 720px;
+    margin: 0 0 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+}
+.content-body-main .category-item .title{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+    background-image:url(img/order/order.bg-title.png);
+    background-repeat: repeat-x;
+    height: 40px;
+    display: flex;
+
+}
+.category-item .title .category-name{
+    padding: 10px;
+}
+.category-item .title .description{
+    font-size: 11px;
+    margin-left: auto;
+}
+.category-item .title .description ul{
+    display: flex;
+    padding: 5px;
+}
+.category-item .title .description ul li{
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.category-item .title .description .stick-description{
+    padding: 12px;
+}
+.category-products .products-list .item{
+    padding: 15px 15px 5px 5px;
+}
+.products-list .item .detail-product{
+    display: flex;
+    padding-right:5px;
+}
+.detail-product .products-image .img{
+    width: 100%;
+}
+.detail-product .product-shop{
+    padding: 5px 5px 10px 10px;
+    width: 200px;
+}
+.product-shop .product-name{
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.product-shop .description{
+    color: #777c98;
+    font-size: 11px;
+    font-weight: bold;
+}
+.product-shop .actions{
+    margin-top: 10px;
+}
+.detail-product .product-configurable-items{
+    width: 100px;
+}
+.detail-product .product-configurable-item{
+    display: flex;
+    float: right;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.detail-product .product-configurable-item .item-price{
+    color: #831d1d;
+    font-size: 12px;
+}
+.detail-product .product-configurable-item .add-or-remove{
+    margin-left: 5px;
+}
+.product-configurable-item .add-or-remove a{
+    color: #831d1d;
+}
+.product-configurable-item .add-or-remove i{
+    font-size: 20px;
+}
+.sidebar-right-col .side-bar-mini-cart .title-mini-cart{
+    background-image: url(img/order/order.bg-title.png);
+    background-repeat: repeat-x;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana;
+    margin-bottom: 0px;
+    height: 35px;
+    padding: 10px 0 13px 0;    
+}
+.sidebar-right-col{
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 160px;
+    margin-left: 12px;
+}
+.side-bar-mini-cart .shipping-methods{
+    margin-left: 5px;
+    margin-right: 2px;
+    padding-right: 5px;
+    padding-bottom: 3px; 
+}
+.shipping-methods .checkout_detail_infor{
+color: #833706;
+font-size: 12px;
+font-weight: bold;
+}
+.footer-mini-cart .btn-order{
+    background-image: url(img/order/.btn-order.png);
+    background-repeat: repeat-x;
+    border-radius:  5px 5px 5px 5px;
+    width: 235px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}

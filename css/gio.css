@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    color: white;
+    font-family: Arial;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    top:8px;
+    left:45px;
+}
+.header_top{
+    background-image: url(../img/header/bg.png);
+    background-repeat: repeat-x;
+    text-align: right;
+    height: 80px;
+}
+body{
+    margin: 0 auto;
+    font-family: Arial;
+    background-color: white;
+}
+#lienket{
+    display: flex;
+    justify-content: flex-end;
+}
+#lienket .login{
+    font-size: 20px;
+    padding-top: 5px;
+}
+#lienket .timkiem {
+    display: flex;
+    padding-top: 5px;
+}
+#lienket .timkiem .textbox{
+    border: 1px solid #F7941D;
+    color: #F7941D;
+    font-size: 15px;
+    height: 23px;
+    position: relative;
+    left: 24px;
+    width: 250px;
+}
+#lienket .timkiem .button{
+    position: relative;
+    height: 23px;
+    background-color: #FFC3A5;
+    top: 1px;
+}
+#menu{
+    padding-top: 15px;
+}
+#menu ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+   
+}
+#menu ul li{
+    border-right: 1px solid #ffbc9b;
+    height: 18px;
+    padding: 0 10px;
+    color: white;
+}
+#menu ul li a{
+    color: white;
+    display: block;
+    height: 23px;
+    padding: 1px 7px;
+}
+#menu ul li a:hover{
+    background-color: white;
+    border-radius: 5px;
+    height: 15px;
+    color: #e0611d;
+}
+#menu ul li a.active{
+    background: none repeat scroll 0 0 #831d1d;
+    border: 1px solid #f9cfb6;
+    border-radius: 5px;
+    height: 15px;
+}
+#menu img{
+    border-right: 0 none;
+    margin-top: -8px;
+}
+#co{
+    padding-top: 10px;
+}
+#main{
+    background-image: url(../img/shopping_cart/bg_pg.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0 auto !important;
+    padding: 90px 110px !important;
+    z-index: 2;
+    min-height: 585px;   
+}
+#body_content{
+    padding: 130px 150px 30px 180px;
+}
+#body_content .page_title{
+    color: #e53328;
+    font-size: 60px;
+    font-weight: bold;
+}
+#main_shopping_cart{
+    margin: 30px auto;
+    height: auto;
+}
+.tb1_cart_order{
+    border-collapse: collapse;
+    border: 2px solid #d7d7d7;
+    font-size: 13px;
+    width: 100%;
+    height: 250px;
+}
+.tb1_cart_order th{
+    color: #a54715;
+    font-size: 15px;
+    border: 2px solid #d7d7d7;
+    background-color: #f9ad81;
+}
+.tb1_cart_order td{
+    border: 2px solid #d7d7d7;
+    background-color: #ffe9da;
+    text-align: center;
+}
+.tb1_cart_order td:first-child{
+    width: 150px;
+}
+.tb1_cart_order .product_name{
+    text-align: left;
+    padding-left: 10px;
+    color: #e53328;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.tb1_cart_order .product_size{
+    text-align: left;
+    padding-left: 10px;
+    color: #454545;
+}
+.tb1_cart_order .product_price{
+    color: #454545;
+    font-weight: bold;
+}
+.tb1_cart_order .product_qty{
+    background-color: white;
+    width: 34px;
+    height: 18px;
+    border-style: hidden;
+    color: #454545;
+}
+.tb1_cart_order .btn_close{
+    color: #f6741e;
+    font-size: 20px;
+}
+.add_other_pro{
+    background-color: #f9ad81;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.cart_part_2{
+    background-color: #ffe9da;
+    border: 2px solid #d7d7d7;
+    padding-top: 10px;
+    display: flex;
+}
+.cart_part_2 .related_pro{
+    width: 35%;
+    font-size: 13px;
+}
+.related_pro .text_title{
+    color: #454545;
+    font-weight: bold;
+    padding: 10px;
+}
+.related_pro .product-image{
+    display: flex;
+}
+.product-image .img-detail{
+    padding: 10px;
+}
+.product-image .img-descript{
+    margin-left: 30px;
+}
+.img-descript .title-product{
+    color: #e53328;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.img-descript .price-product{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.btn-adder{
+    margin-top: 10px;
+}
+.btn-submit{
+    background-color: #f6741e;
+    border-style: hidden;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+}
+.cart_part_2 .discount_code{
+    width: 35%;
+    border-left: 2px solid #d7d7d7;
+    border-right: 2px solid #d7d7d7;
+    font-size: 13px;
+    padding: 10px 20px;
+}
+.discount_code .font1colum2{
+    color: #d0500b;
+    font-weight: bold;
+}
+.discount_code .font2colum2{
+    color: #454545;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.discount_code .input_code{
+    display: flex;
+    margin-bottom: 10px;
+}
+.discount_code .textinput{
+    width: 65%;
+    height: 22px;
+}
+.cart_part_2 .proceed_checkout{
+    width: 30%;
+    color: #454545;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+.proceed_checkout .item{
+    display: flex;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.item .title{
+    margin-right: 50px;
+}
+.proceed_checkout .total-price{
+    color: #e53328;
+    font-size: 18px;
+}
+.total-price .title{
+    margin-right: 40px !important;
+}
+.proceed_checkout .btn-submit{
+    width: 240px;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+#footer{
+    background-color: #F7941D;
+    color: white;
+    padding: 8px 15px;
+    display: flex;
+}
+#footer .left-footer{
+    width: 50%;
+}
+#footer .left-footer ul{
+    display: flex;
+}
+#footer .left-footer a{
+    padding: 5px;
+    width: 20px;
+    height: 18px;
+    font-size: 20px;
+    margin-top: -3px;
+}
+#footer .right-footer{
+    width: 50%;
+}
+#footer .right-footer ul{
+   justify-content: flex-end;
+   display: flex;
+   padding-top: 3px;
+}
+#footer .right-footer li{
+    border-right: 1px solid #ffbc9b;
+    height: 18px;
+    padding: 0 10px;
+    color: white;
+}
+#footer .right-footer li:last-child{
+    border: none;
+}
+#footer .right-footer a{
+    color: white;
+    height: 23px;
+    padding: 1px 7px;
+}
+#footer .right-footer a:hover{
+    border-bottom: 2px solid black;
+}

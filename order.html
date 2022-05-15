@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order Site</title>
+    <link rel="stylesheet" href="css/gio.css">
+    <link rel="stylesheet" href="vendor/css/all.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/thanhtoan.css">
+    <link rel="stylesheet" href="css/order.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>   
+button:hover {
+  opacity: 0.8;}
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.modal {
+  display: none; 
+  position: fixed;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.8);
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%; 
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <!--<div id="id01" class="modal">  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>            
+          </div>      
+          <div class="container">
+            <label for="uname"><b>Tên đăng nhập</b></label>
+            <input type="text" placeholder="Nhập tên đăng nhập" name="uname" required>      
+            <label for="psw"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="Nhập mật khẩu" name="psw" required>              
+            <button type="submit">Đăng nhập</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>      
+          <div class="container" style="background-color: rgba(255, 255, 255, 0.8);">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Hủy</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>      
+      <script>
+      var modal = document.getElementById('id01');
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>
+      <div id="id02" class="modal">  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>            
+          </div>      
+          <div class="container">
+            <label for="uname"><b>Tên đăng kí</b></label>
+            <input type="text" placeholder="Nhập tên cần đăng kí" name="uname" required>      
+            <label for="psw"><b>Mật khẩu đăng kí</b></label>
+            <input type="password" placeholder="Nhập mật khẩu cần đăng kí" name="psw" required>              
+            <button type="submit">Đăng kí!</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Check
+            </label>
+          </div>    
+         </form>
+      </div>
+      <script>
+      var modal = document.getElementById('id02');
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>-->
+    <section id="header">
+        <div id="logo">
+            <a href="#"><img src="img/header/logo.png" alt=""></a>
+        </div>
+        <div class="header-top">
+            <div id="searchform" class="clearfix">
+                <div class="item" id="register">
+                    <a onclick="document.getElementById('id01').style.display='block'"  href="dangnhap.html">Đăng nhập </a>
+                    <a onclick="document.getElementById('id02').style.display='block'" href="dangky.html">&ensp;Đăng ký </a>                   
+                </div>
+                <div class="item">
+                    <input class="search_textbox" type="text" value="Search">
+                    <div class="search_button">
+                        <a href="#"><img src="img/header/searchbtn.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="clearfix">
+                <ul>
+                  <li><a  href="index.html">Trang chủ </a></li>
+                  <li><a class="menu-active" href="order.html">Đặt hàng online</a></li>
+                  <li><a href="menu.html">thực đơn</a></li>
+                  <li><a href="#">Khuyến mãi</a></li>
+                  <li><a href="header-footer.html">Giới thiệu</a></li>
+                  <li><a href="lienhe.html">Liên hệ</a></li>
+                  <li><a href="#">Tuyển dụng</a></li>
+                  <li><a href="thanhtoan.html">Thanh toán</a></li>
+                  <li><a href="gio.html"> <img src="img/header/cart.png" alt=""> </a> </li>
+                </ul>
+            </div>
+            <div id="flag">
+                <a href="#"><img src="img/header/vi.png" alt="VN" title="Vietnamese"></a>
+                <a href="#"><img src="img/header/uk.png" alt="UK" title="English"></a>
+                <a href="#"><img src="img/header/kor.png" alt="Kr" title="Korean"></a>
+                <a href="#"><img src="img/header/ja.png" alt="Jp" title="Japanese"></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id=main> 
+      <div class="wapper">
+        <div class="content-title">
+          <h2 class="page_title">Đặt hàng online</h2>
+        </div>
+        <div class="content-body">
+          <div class="sidebar-left-col">
+<div class="order-toolbar">
+  <ul class="category-list-menu">
+    <li><a class="active">Pizza</a></li> 
+    <li><a>Starters</a></li> 
+    <li><a>Platters</a></li> 
+    <li><a>Alf Fried Rice</a></li> 
+    <li><a>Salads</a></li> 
+    <li><a>Pastas</a></li> 
+    <li><a>Ribs</a></li> 
+    <li><a>Chef's Seclection and Main</a></li> 
+    <li><a>Burgers</a></li> 
+    <li><a>Drinks</a></li> 
+  </ul>
+</div>
+          </div>
+          <div class="content-body-main">
+          <div class="category-item">
+            <div class="title">
+              <div class="category-name">Pizza</div>
+              <div class="description">
+                <ul>
+                  <li>
+                    <p>Cỡ nhỏ(S)</p>
+                    <p>22cm - 6 miếng</p>
+                  </li>
+                  <li>
+                    <p>Cỡ lớn (L)</p>
+                    <p>30cm - 8 miếng</p>
+                  </li>
+                  <li>
+                    <p>Cỡ đại (XL)</p>
+                    <p>34cm - 10 miếng</p>
+                  </li>
+                  <li>
+                    <p>Giá chưa bao gồm</p>
+                    <p>10% thuế VAT</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="category-products">
+              <ul class="products-list">
+                <li class="item">
+                  <div class="detail-product">
+                    <div class="product-image">
+                      <img src="img/order/1_-_margherita_1.png">
+                    </div>
+                    <div class="product-shop">
+                      <h2 class="product-name">#1 MARGHERITA</h2>
+                      <div class="description">Pizza với xốt cà chua &amp; phô mai.</div>
+                      <div class="actions">
+                        <button title="Đặt mua" class="button btn-cart">Đặt mua</button>
+                      </div>
+                    </div>
+                    <div class="product-configurable-items">
+                      <div class="product-configurable-item">
+                        <div class="item-price">S 145,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>
+                      <div class="product-configurable-item">
+                        <div class="item-price">L 215,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>
+                      <div class="product-configurable-item">
+                        <div class="item-price">XL 260,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="detail-product">
+                    <div class="product-image">
+                      <img src="img/order/3_-_seafood_supreme_2.png">
+                    </div>
+                    <div class="product-shop">
+                      <h2 class="product-name">#3 SEAFOOD SUPREME</h2>
+                      <div class="description">Hải sản với xốt cà chua &amp; jăm bông, ớt chuông xanh, nấm, quả oliu, dưa &amp; phô mai.</div>
+                      <div class="actions">
+                        <button title="Đặt mua" class="button btn-cart">Đặt mua</button>
+                      </div>
+                    </div>
+                    <div class="product-configurable-items">
+                      <div class="product-configurable-item">
+                        <div class="item-price">S 145,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>
+                      <div class="product-configurable-item">
+                        <div class="item-price">L 215,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>
+                      <div class="product-configurable-item">
+                        <div class="item-price">XL 260,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="category-item">
+            <div class="title">
+              <div class="category-name">Starter</div>
+              <div class="description">                
+                    <p class="stick-description"> Giá trên chưa bao gồm 10% thuế VAT</p>                  
+              </div>
+            </div>
+            <div class="category-products">
+              <ul class="products-list">
+                <li class="item">
+                  <div class="detail-product">
+                    <div class="product-image">
+                      <img src="img/order//garlic_breadr.png">
+                    </div>
+                    <div class="product-shop">
+                      <h2 class="product-name">GARLIC BREAD</h2>
+                      <div class="description">Bánh mì bơ tỏi bỏ lò</div>
+                      <div class="actions">
+                        <button title="Đặt mua" class="button btn-cart">Đặt mua</button>
+                      </div>
+                    </div>
+                    <div class="product-configurable-items">
+                      <div class="product-configurable-item">
+                        <div class="item-price"> 80,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="detail-product">
+                    <div class="product-image">
+                      <img src="img/order/3._soup_of_the_day_2.png">
+                    </div>
+                    <div class="product-shop">
+                      <h2 class="product-name">SOUP OF THE DAY</h2>
+                      <div class="description">Xin hỏi nhân viên phục vụ về món súp đặc biệt trong ngày</div>
+                      <div class="actions">
+                        <button title="Đặt mua" class="button btn-cart">Đặt mua</button>
+                      </div>
+                    </div>
+                    <div class="product-configurable-items">
+                      <div class="product-configurable-item">
+                        <div class="item-price">90,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="category-item">
+            <div class="title">
+              <div class="category-name">PLATTER</div>
+              <div class="description">                
+                    <p class="stick-description"> Giá trên chưa bao gồm 10% thuế VAT</p>                  
+              </div>
+            </div>
+            <div class="category-products">
+              <ul class="products-list">
+                <li class="item">
+                  <div class="detail-product">
+                    <div class="product-image">
+                      <img src="img/order/starter_platter_2.png">
+                    </div>
+                    <div class="product-shop">
+                      <h2 class="product-name">STARTER PLATTER</h2>
+                      <div class="description">Đĩa tổng hợp gồm : Sườn nướng, khoai tây múi chiên giòn, mực tẩm bột chiên, cánh gà nướng, hành vòng tẩm bột chiên &amp; bánh mỳ bơ tỏi.</div>
+                      <div class="actions">
+                        <button title="Đặt mua" class="button btn-cart">Đặt mua</button>
+                      </div>
+                    </div>
+                    <div class="product-configurable-items">
+                      <div class="product-configurable-item">
+                        <div class="item-price"> 425,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>                     
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="detail-product">
+                    <div class="product-image">
+                      <img src="img/order/meat_lover_platter_4.png">
+                    </div>
+                    <div class="product-shop">
+                      <h2 class="product-name">MEAT LOVER'S PLATTER</h2>
+                      <div class="description">Đĩa tổng hợp bao gồm: Cánh gà nướng, xúc xích nướng, tôm nướng, 4 miếng sườn nướng, bánh mì bơ tỏi nhồi phô mai &amp; khoai tây múi chiên giòn</div>
+                      <div class="actions">
+                        <button title="Đặt mua" class="button btn-cart">Đặt mua</button>
+                      </div>
+                    </div>
+                    <div class="product-configurable-items">
+                      <div class="product-configurable-item">
+                        <div class="item-price">445,000 đ</div>
+                        <div class="add-or-remove">
+                          <a class="product-item-add"><i class="fa fa-plus-square"></i></a>                                                  
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="category-item">
+          </div>
+          <div class="category-item">
+          </div>
+          <div class="category-item">
+          </div>
+          </div>
+          <div class="sidebar-right-col">
+<div class="side-bar-mini-cart">
+  <div class="title-mini-cart">giỏ hàng</div>
+  <div class="shipping-methods">
+    <ul>
+      <li>
+        <input type="radio" value="" checked="checked" onclick="">
+        <label class="checkout_detail_infor">giao hàng</label>
+      </li>
+      <li>
+        <input type="radio" value="" onclick="">
+        <label class="checkout_detail_infor">đến mang về</label>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-mini-cart">
+    <div class="btn-order">
+      Vui lòng gọi điện đặt món
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+             
+    </section>
+    <section id=footer>
+        <div class="footer-left">
+<ul>
+    <li style="color: white; text-align: center;" class="item">@ The Al Fresco's Group 2019 &ensp;</li>
+    <li class="item"><a class="icon_face" href="#"> <i class="fa fa-youtube-play"></i></a></li> 
+    <li class="item"><a class="icon_youtube" href="#"> <i class="fa fa-facebook"></i></a></li>
+    <li class="item"><a class="icon_app" href="#"> <i class="fa fa-archive"></i></a></li>
+</ul>
+        </div>
+        <div class="footer-right">
+<ul>
+    <li> <a href="#">Sơ đồ site</a> </li>
+    <li> <a href="#">Nhượng quyền</a> </li>
+    <li> <a href="#">Chính sách bảo mật</a> </li>
+    <li> <a href="#">Điều kiện sử dụng</a> </li>
+    <li> <a href="#">Head office</a> </li>
+</ul>
+        </div>
+    </section>    
+</body>
+</html>

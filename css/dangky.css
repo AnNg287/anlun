@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    color: white;
+    font-family: Arial;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    position: absolute;
+    top:8px;
+    left:45px;
+}
+.header_top{
+    background-image: url(../img/header/bg.png);
+    background-repeat: repeat-x;
+    text-align: right;
+    height: 80px;
+}
+body{
+    margin: 0 auto;
+    font-family: Arial;
+    background-color: white;
+}
+#lienket{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+#lienket .login{
+    font-size: 15px;
+    padding-top: 10px;
+}
+#lienket .timkiem {
+    display: flex;
+    padding-top: 5px;
+}
+#lienket .timkiem .textbox{
+    border: 1px solid #F7941D;
+    color: #F7941D;
+    font-size: 15px;
+    height: 23px;
+    position: relative;
+    left: 24px;
+    width: 250px;
+}
+#lienket .timkiem .button{
+    position: relative;
+    height: 23px;
+    background-color: #FFC3A5;
+    top: 1px;
+}
+#menu{
+    padding-top: 15px;
+}
+#menu ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+   
+}
+#menu ul li{
+    border-right: 1px solid #ffbc9b;
+    height: 18px;
+    padding: 0 10px;
+    color: white;
+}
+#menu ul li a{
+    color: white;
+    display: block;
+    height: 23px;
+    padding: 1px 7px;
+}
+#menu ul li a:hover{
+    background-color: white;
+    border-radius: 5px;
+    height: 15px;
+    color: #e0611d;
+}
+#menu ul li a.active{
+    background: none repeat scroll 0 0 #831d1d;
+    border: 1px solid #f9cfb6;
+    border-radius: 5px;
+    height: 15px;
+}
+#menu img{
+    border-right: 0 none;
+    margin-top: -8px;
+}
+#co{
+    padding-top: 10px;
+    margin-right: 10px;
+}
+#main{
+    background-image: url(../img/contact/bg_contact.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0 auto !important;
+    padding: 139px 110px !important;
+    background-position: center center;
+    z-index: 2;
+    min-height: 475px;
+}
+#footer{
+    background-image: url(../img/footer/bg_footer.png);
+    color: white;
+    padding: 8px 15px;
+}
+#footer .thongtin{
+    display: flex;
+}
+#footer .thongtin .trai{
+    width: 50%;
+}
+#footer .thongtin .trai ul{
+    display: flex;
+}
+#footer .thongtin .trai a{
+    padding: 5px;
+    width: 20px;
+    height: 18px;
+    font-size: 20px;
+    margin-top: -3px;
+}
+#footer .thongtin .phai{
+    width: 50%;
+}
+#footer .thongtin .phai ul{
+   justify-content: flex-end;
+   display: flex;
+   padding-top: 3px;
+}
+#footer .thongtin .phai li{
+    border-right: 1px solid #ffbc9b;
+    height: 18px;
+    padding: 0 10px;
+    color: white;
+}
+#footer .thongtin .phai li:last-child{
+    border: none;
+}
+#footer .thongtin .phai a{
+    color: white;
+    height: 23px;
+    padding: 1px 7px;
+}
+#footer .thongtin .phai a:hover{
+    border-bottom: 2px solid black;
+}
+#body_content{
+    padding: 130px 150px 30px 180px;
+}
+#body_content .page_title{
+    color: #e53328;
+    font-size: 60px;
+    font-weight: bolder;
+background-color: white;
+    border-radius: 10px;
+    width: 360px;
+    padding-left: 15px;
+}
+#main_contact{
+    display: flex;
+    margin: 30px auto;
+}
+#content_left{
+    background-color: #ffe9da;
+    width: 30%;
+    height: 260px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 16px;
+}
+#margintest{
+    font-size: 22px;
+    color: #3c3b39;
+}
+.pfonsizeleft{
+    color: #984d17;
+    font-size: 13px;
+    padding: 10px 0;
+    word-spacing: normal;
+}
+#content_right{
+    background-color: #ffe9da;
+    width: 60%;
+    height: auto;
+}
+.form-contact{
+    width: 60%;
+    padding: 20px;
+    
+}
+input[type=text]{
+    width: 415px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 10px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ques_condition{
+    color: #883a04;
+    text-decoration: underline;
+}
+.inf-submit{
+    margin-top: 20px;
+}
+.btn-submit{
+    background-color: #f6741e;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
